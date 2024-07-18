@@ -3,72 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/style.css">
   <title>Homepage</title>
 </head>
 <body>
   <header>
-    <h1>About me</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id quam et magna posuere lobortis. Nulla arcu augue, venenatis eu sagittis quis, sollicitudin volutpat felis. Nullam dignissim, purus volutpat fermentum rutrum, lacus erat aliquet ligula, id laoreet eros quam non odio. Vestibulum pretium pharetra quam quis placerat. Cras eget tempor nisl. Praesent non tincidunt mi. Quisque viverra ligula ac velit pellentesque molestie. Vivamus egestas ipsum non neque imperdiet mattis.</p>
-    <a href="https://github.com/Estercade?tab=repositories" target="_blank">Github</a>
-    <a href="">LinkedIn</a>
+    <div class="header-container">
+      <div class="portrait-container">
+        <picture>
+          <source media="(max-width: 600px)" srcset="./src/assets/header-portrait-600w.jpg" />
+          <source media="(max-width: 1000px)" srcset="./src/assets/header-portrait-1000w.jpg" />
+          <img src="./src/assets/header-portrait-full.jpg" alt="Wilson Lee" />
+        </picture>
+      </div>
+      <div class="bio-container">
+        <h1>About me</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id quam et magna posuere lobortis. Nulla arcu augue, venenatis eu sagittis quis, sollicitudin volutpat felis. Nullam dignissim, purus volutpat fermentum rutrum, lacus erat aliquet ligula, id laoreet eros quam non odio. Vestibulum pretium pharetra quam quis placerat. Cras eget tempor nisl. Praesent non tincidunt mi. Quisque viverra ligula ac velit pellentesque molestie. Vivamus egestas ipsum non neque imperdiet mattis.</p>
+        <div class="header-link-container">
+          <a href="https://github.com/Estercade?tab=repositories" target="_blank" aria-label="Github"><img src="./src/assets/github.svg" alt=""></a>
+          <a href="" aria-label="LinkedIn"><img src="./src/assets/linkedin.svg" alt=""></a>
+          <a href="" aria-label="Twitter"><img src="./src/assets/twitter.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main>
     <h1>My work</h1>
-    <div class="project-container">
-      <div class="repo-card">
+    <div class="projects-container">
+      <div class="project-card">
         <picture>
-          <source media="(max-width: 500px)" srcset="project-preview-500w.jpg" />
-          <source media="(max-width: 1000px)" srcset="project-preview-1000w.jpg" />
-          <img src="project-preview-full.jpg" alt="screenshot of project" />
+          <source media="(max-width: 600px)" srcset="./src/assets/project1-preview-600w.jpg" />
+          <source media="(max-width: 1000px)" srcset="./src/assets/project1-preview-1000w.jpg" />
+          <img src="./src/assets/project1-preview-full.jpg" alt="screenshot of project" />
         </picture>
-        <h2>Project name</h2>
-        <a href="">Github repo</a>
-        <a href="">Direct link</a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+        <div class="project-description">
+          <h2>Project name</h2>
+          <div class="project-card-link-container">
+            <a href="" aria-label="Github"><img src="./src/assets/github.svg" alt=""></a>
+            <a href="" aria-label="preview site"><img src="./src/assets/open-in-new.svg" alt=""></a>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+        </div>
       </div>
 
-      <div class="repo-card">
+      <div class="project-card">
         <picture>
-          <source media="(max-width: 500px)" srcset="project-preview-500w.jpg" />
-          <source media="(max-width: 1000px)" srcset="project-preview-1000w.jpg" />
-          <img src="project-preview-full.jpg" alt="screenshot of project" />
+          <source media="(max-width: 600px)" srcset="./src/assets/project2-preview-600w.jpg" />
+          <source media="(max-width: 1000px)" srcset="./src/assets/project2-preview-1000w.jpg" />
+          <img src="./src/assets/project2-preview-full.jpg" alt="screenshot of project" />
         </picture>
-        <h2>Project name</h2>
-        <a href="">Github repo</a>
-        <a href="">Preview site</a>
-        <p>Integer nibh ipsum, vestibulum a arcu eu.</p>
+        <div class="project-description">
+          <h2>Project name</h2>
+          <div class="project-card-link-container">
+            <a href="" aria-label="Github"><img src="./src/assets/github.svg" alt=""></a>
+            <a href="" aria-label="preview site"><img src="./src/assets/open-in-new.svg" alt=""></a>
+          </div>
+          <p>Integer nibh ipsum, vestibulum a arcu eu.</p>
+        </div>
       </div>
 
-      <div class="repo-card">
-        <picture>
-          <source media="(max-width: 500px)" srcset="project-preview-500w.jpg" />
-          <source media="(max-width: 1000px)" srcset="project-preview-1000w.jpg" />
-          <img src="project-preview-full.jpg" alt="screenshot of project" />
-        </picture>
-        <h2>Project name</h2>
-        <a href="">Github</a>
-        <a href="">Preview site</a>
-        <p>Aenean sit amet odio eget tellus tempus.</p>
+      <div class="project-card">
+        <div class="project-preview-container">
+          <picture>
+            <source media="(max-width: 600px)" srcset="./src/assets/project3-preview-600w.jpg" />
+            <source media="(max-width: 1000px)" srcset="./src/assets/project3-preview-1000w.jpg" />
+            <img src="./src/assets/project3-preview-full.jpg" alt="screenshot of project" />
+          </picture>
+        </div>
+        <div class="project-description">
+          <h2>Project name</h2>
+          <div class="project-card-link-container">
+            <a href="" aria-label="Github"><img src="./src/assets/github.svg" alt=""></a>
+            <a href="" aria-label="preview site"><img src="./src/assets/open-in-new.svg" alt=""></a>
+          </div>
+          <p>Aenean sit amet odio eget tellus tempus.</p>
+        </div>
       </div>
+
+      <div class="project-card">
+        <picture>
+          <source media="(max-width: 600px)" srcset="./src/assets/project4-preview-600w.jpg" />
+          <source media="(max-width: 1000px)" srcset="./src/assets/project4-preview-1000w.jpg" />
+          <img src="./src/assets/project4-preview-full.jpg" alt="screenshot of project" />
+        </picture>
+        <div class="project-description">
+          <h2>Project name</h2>
+          <div class="project-card-link-container">
+            <a href="" aria-label="Github"><img src="./src/assets/github.svg" alt=""></a>
+            <a href="" aria-label="preview site"><img src="./src/assets/open-in-new.svg" alt=""></a>
+          </div>
+          <p>Ut ultrices nunc lacus, sed hendrerit massa.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <picture>
+          <source media="(max-width: 600px)" srcset="./src/assets/project5-preview-600w.jpg" />
+          <source media="(max-width: 1000px)" srcset="./src/assets/project5-preview-1000w.jpg" />
+          <img src="./src/assets/project5-preview-full.jpg" alt="screenshot of project" />
+        </picture>
+        <div class="project-description">
+          <h2>Project name</h2>
+          <div class="project-card-link-container">
+            <a href="" aria-label="Github"><img src="./src/assets/github.svg" alt=""></a>
+            <a href="" aria-label="preview site"><img src="./src/assets/open-in-new.svg" alt=""></a>
+          </div>
+          <p>Sed commodo leo non faucibus suscipit. Aliquam.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-preview-container">
+          <picture>
+            <source media="(max-width: 600px)" srcset="./src/assets/project6-preview-600w.jpg" />
+            <source media="(max-width: 1000px)" srcset="./src/assets/project6-preview-1000w.jpg" />
+            <img src="./src/assets/project6-preview-full.jpg" alt="screenshot of project" />
+          </picture>
+        </div>
+        <div class="project-description">
+          <h2>Project name</h2>
+          <div class="project-card-link-container">
+            <a href="" aria-label="Github"><img src="./src/assets/github.svg" alt=""></a>
+            <a href="" aria-label="preview site"><img src="./src/assets/open-in-new.svg" alt=""></a>
+          </div>
+          <p>Nullam quis ante a dui fringilla tincidunt.</p>
+        </div>
     </div>
   </main>
 
   <footer>
-    <h1>Contact me</h1>
-
-    <p>Please get in touch if you think our work could be mutually beneficial!</p>
-
-    <p>1234 Random Road
-      <br>Random Town, New Jersey 12345
-    </p>
-
-    <p>555-555-55555</p>
-
-    <p>wilsonlee1093@gmail.com</p>
-
-    <a href="https://github.com/Estercade?tab=repositories" target="_blank">Github</a>
-    <a href="">LinkedIn</a>
+    <div class="footer-container">
+      <div class="contact-me-container">
+        <h1>Contact me</h1>
+        <p>Please get in touch if you think our work could be mutually beneficial!</p>
+        <p>1234 Random Road
+          <br>Random Town, New Jersey 12345
+        </p>
+        <p><a href="tel:+5555555555"><img src="./src/assets/phone.svg" alt="">555-555-5555</a></p>
+        <p><a href="mailto:wilsonlee1093@gmail.com"><img src="./src/assets/email.svg" alt="">wilsonlee1093@gmail.com</a></p>
+        <div class="footer-link-container">
+          <a href="https://github.com/Estercade?tab=repositories" target="_blank" aria-label="Github"><img src="./src/assets/github.svg" alt=""></a>
+          <a href="" aria-label="LinkedIn"><img src="./src/assets/linkedin.svg" alt=""></a>
+          <a href="" aria-label="Twitter"><img src="./src/assets/twitter.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="footer-image-container">
+        <picture>
+          <source media="(max-width: 600px)" srcset="./src/assets/footer-image-600w.jpg" />
+          <source media="(max-width: 1000px)" srcset="./src/assets/footer-image-1000w.jpg" />
+          <img src="./src/assets/footer-image-full.jpg" alt="" />
+        </picture>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

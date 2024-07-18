@@ -1,0 +1,261 @@
+/* Project Homepage CSS stylesheet */
+
+* {
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+
+}
+
+@font-face {
+    font-family: 'cardoregular';
+    src: url('./assets/cardo-regular-webfont.woff2') format('woff2'),
+         url('./assets/cardo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+p {
+  font-size: 1.05rem;
+}
+
+body {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'cardoregular', sans-serif;
+  background-color: #FDFDFD;
+}
+
+header {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.header-container, main, .footer-container {
+  max-width: 1000px;
+}
+
+.header-container {
+  margin: 0 auto 2rem auto;
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.portrait-container {
+  text-align: center;
+  height: 100%;
+}
+
+.bio-container {
+  height: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  align-self: center;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  background-color: #FDFDFD;
+}
+
+.header-link-container {
+  text-align: right;
+  margin-top: auto;
+}
+
+.header-link-container img {
+  width: 2rem;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 3rem;
+}
+
+.project-card {
+  text-align: center;
+  justify-self: center;
+  position: relative;
+  border: 1px solid lightgrey;
+  max-width: 266px;
+  margin-bottom: 1.5rem;
+}
+
+.project-description {
+  padding: 1rem;
+  text-align: left;
+}
+
+.project-description h2 {
+  margin-bottom: 0.5rem;
+}
+
+.project-card-link-container {
+  position: absolute;
+  top: 225px;
+  right: 8px;
+}
+
+.project-card-link-container img {
+  width: 1.5rem;
+}
+
+footer {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: #0891B2;
+  color: #FDFDFD;
+}
+
+.footer-container {
+  margin: 2rem auto 2rem auto;
+  display: flex;
+}
+
+.contact-me-container {
+  min-width: 0;
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.contact-me-container p {
+  margin: 1rem 0;
+}
+
+.contact-me-container>p img {
+  width: 1.5rem;
+  margin: 0 0.2rem -0.5rem 0;
+}
+
+.footer-link-container {
+  margin-bottom: 2rem;
+}
+
+.footer-link-container img {
+  width: 2.5rem;
+}
+
+.contact-me-container img, .footer-link-container img {
+  filter: brightness(0) invert(1);
+}
+
+.footer-image-container {
+  text-align: center;
+}
+
+.bio-container h1, .bio-container p, main h1, .contact-me-container h1 {
+  margin: 1rem 0;
+}
+
+a {
+  margin: 0;
+}
+
+.portrait-container img, .bio-container, .project-card {
+  box-shadow: 0 0 3px darkgrey, 3px 3px 3px darkgrey;
+}
+
+@media (max-width: 1000px) {
+  header {
+    margin-top: 0;
+  }
+  
+  .header-container, .footer-container {
+    padding: 1rem;
+  }
+
+  .header-container {
+    display: block;
+  }
+  
+  .portrait-container {
+    float: left;
+    margin: -1rem 1rem 0.5rem 0;
+  }
+
+  .bio-container {
+    display: block;
+    padding-top: 2.1rem;
+    margin: 0 0 0 3rem;
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 650px;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+
+  .project-card {
+    margin-bottom: 2rem;
+  }
+
+  .project-description {
+    padding: 0.5rem;
+  }
+
+}
+
+@media (max-width: 630px) {
+
+  .header-container {
+    padding: 0.5rem;
+  }
+  
+  .footer-container {
+    padding: 0;
+  }
+
+  .header-container {
+    flex-flow: column;
+  }
+
+  .portrait-container {
+    float: none;
+    margin-top: 0.5rem;
+  }
+
+  .bio-container {
+    margin-top: 0rem;
+    box-shadow: none;
+    min-height: 0;
+  }
+
+  .header-link-container {
+    text-align: center;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    margin-bottom: 1rem;
+  }
+
+  .footer-container {
+    flex-flow: column;
+    margin: 2rem auto 0 auto;
+  }
+
+  .contact-me-container {
+    margin: 0 2rem;
+  }
+
+  .bio-container h1, main h1, .footer-container h1, .footer-link-container {
+    text-align: center;
+  }
+}

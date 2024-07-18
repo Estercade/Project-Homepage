@@ -1,6 +1,6 @@
 # Project-Homepage
 
-This project was made following the instructions and specifications for The Odin Project Advanced HTML and CSS Course Homepage project (https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-homepage).
+This project was made following the instructions and specifications for The Odin Project Advanced HTML and CSS Course [Homepage project](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-homepage).
 
 ## Description
 
@@ -22,12 +22,20 @@ The goal of this project is to create a responsive homepage. This program is opt
 
 - Visual Studio Code
 - Git and GitHub
+- npm package manager
+- webpack module bundler
 
 ## Author
 
 Wilson Lee
 - [Github](https://github.com/estercade)
 
+## Credits
+
+- Icons from [Pictogrammers](https://pictogrammers.com/);
+- Portraits in header and footer from [Vanessa Garcia](https://www.pexels.com/@vanessa-garcia/)
+- Font from [David Perry](https://www.fontsquirrel.com/fonts/cardo)
+
 ## Acknowledgments
 
-* [The Odin Project] (https://www.theodinproject.com/)
+* [The Odin Project](https://www.theodinproject.com/)
