@@ -4,11 +4,12 @@ This project was made following the instructions and specifications for The Odin
 
 ## Description
 
-The goal of this project is to create a responsive homepage. This program is optimized for use with Google Chrome.
+The goal of this project is to create a responsive homepage with a fully-fledged design for desktop, tablet, and mobile which adapts to the device's screen size. This program is optimized for use with Google Chrome.
+Live demo: https://project-homepage.pages.dev/
 
 ### Features
 
-- Responsive behavior with with a full design for desktop, tablet, and mobile.
+- Responsive behavior which accommodates changes in browser size by adjusting the website layout and rendering images of differing sizes/qualities.
 
 ## Built using
 
